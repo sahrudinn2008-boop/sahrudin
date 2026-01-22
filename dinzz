@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-widht">
+  <title>Form Registrasi External</title>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Form Registrasi</h2>
+<form id="registerForm">
+  
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+</div>
+  
+<div class="form-group">
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Minimal 6 karakter" required>
+</div>
+  
+  <div class="form-group">
+<label for="dob">Tanggal Lahir</label>
+<input type="date" id="dob" name="dob" required>
+</div>
+
+<div class="form-group">
+<label>Jenis Kelamin</label>
+<div class="radio-group">
+  <div class="radio-item">
+    <input type="radio" id="pria" checked>
+    <label for="pria">pria</label>
+  </div>
+  <div class="radio-item">
+    <input type="radio" id="wanita" name="gender" value="Wanita" checked>
+    <label for="wanita">Wanita</label>
+  </div>
+</div>
+</div>
+  
+  <div class="form-group">
+    <label for="job">Pekerjaan</label>
+    <select id="job" name="job">
+      <option value="Mahasiswa">Mahasiswa</option>
+      <option value="Karyawan">Karyawan Swasta</option>
+      <option value="PNS">PNS</option>
+      <option value="Freelancer">Freelancer</option>
+      <option value="Lainnya">Lainnya</option>
+    </select>
+  </div>
+  
+<div class="form-group">
+    <label for="address">Alamat Lengkap</label>
+    <textarea id="address" name="address" placeholder="Masukkan alamat lengkap Anda..."></textarea>
+</div>
+
+<div class="form-group checkbox-group">
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">Saya menyetujui Syarat & Ketentuan</label>
+</div>
+
+<button type="submit">Daftar Sekarang</button>
+
+          <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
